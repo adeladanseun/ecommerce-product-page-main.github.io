@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="design/index.css">
+  <script src="design/index.js" defer></script>
+</head>
+
+<body>
+  <div class="generalWrapper">
+    <header class="mainHeader">
+      <img class="menuopener" alt="menu icon" src="images/icon-menu.svg" tabindex="0">
+      <div class="navWrapper outview">
+        <nav class="navigation">
+
+          <img class="menucloser" alt="close menu" src="images/icon-close.svg" tabindex="0">
+          <ul class="nav-item-holder">
+            <li><a href="#"><span>Collections</span></a></li>
+            <li><a href="#"><span>Menu</span></a></li>
+            <li><a href="#"><span>Women</span></a></li>
+            <li><a href="#"><span>About</span></a></li>
+            <li><a href="#"><span>Contact</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <img alt="sneakers logo" src="images/logo.svg">
+      <aside class="otherinfo">
+        <div class="cartWrapper">
+          <img alt="cart" src="images/icon-cart.svg" tabindex="0">
+          <div class="carts">
+            <p class="cartsHeader">Carts</p>
+            <div class="rest">
+
+              <div class="cartItem show">
+                <main class="maindesc">
+                  <img class="cartproductimage" alt="cart item image" src="images/image-product-1-thumbnail.jpg">
+                  <div class="centralinfo">
+                    <p>Fall Limited Edition Sneakers</p>
+                    <p>$125.00 x <span id="cartItemNumber">3</span> <span class="cartTotal">$<span
+                          id="cartTotal">375</span>.00</span></p>
+                  </div>
+                  <img class="cartdelete" alt="delete item" src="images/icon-delete.svg">
+                </main>
+                <div class="checkout">
+                  checkout
+                </div>
+              </div>
+              <p class="emptyIdentifier">Your cart is empty</p>
+            </div>
+          </div>
+          <span class="cartIndicator show "></span>
+        </div>
+        <img alt="user image" src="images/image-avatar.png">
+      </aside>
+    </header>
+    <main class="main">
+      <section class="imageSection">
+        <img class="cancelpopup" alt="cancel popup" src="images/icon-close.svg">
+        <div class="imageButton back"></div>
+        <div class="imageContainer">
+          <div class="imageWrapper">
+            <img alt="shoe image" src="images/image-product-1.jpg">
+          </div>
+          <div class="imageWrapper">
+            <img alt="shoe image" src="images/image-product-2.jpg">
+          </div>
+          <div class="imageWrapper">
+            <img alt="shoe image" src="images/image-product-3.jpg">
+          </div>
+          <div class="imageWrapper">
+            <img alt="shoe image" src="images/image-product-4.jpg">
+          </div>
+        </div>
+        <div class="imageButton forward"></div>
+        <div class="templateImage">
+          <img class="highlight" alt="sneakers template 1" src="images/image-product-1-thumbnail.jpg">
+          <img alt="sneakers template 2" src="images/image-product-2-thumbnail.jpg">
+          <img alt="sneakers template 3" src="images/image-product-3-thumbnail.jpg">
+          <img alt="sneakers template 4" src="images/image-product-4-thumbnail.jpg">
+        </div>
+      </section>
+      <section class="productInfoSection">
+        <h3 class="companytext">Sneaker Company</h3>
+
+        <h2 class="mainAttractionText">Fall Limited Edition Sneakers</h2>
+
+        <p class="attractionDetails">These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="priceSection">
+          <div class="priceWrapper">
+            <div class="newPrice">$125.00</div>
+            <span class="priceDiscount">50%</span>
+          </div>
+          <div class="oldPrice">$250.00</div>
+        </div>
+        <section class="cartMonitor">
+          <div class="counter">
+            <img class="minusIcon" alt="reduce counter" src="images/icon-minus.svg">
+            <div class="itemcount" id="itemcount">0</div>
+            <img class="plusIcon" alt="reduce counter" src="images/icon-plus.svg">
+          </div>
+          <div class="toCart"><img alt="cart image" src="images/icon-cart.svg"><span>Add to cart</span></div>
+        </section>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
